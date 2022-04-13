@@ -2,13 +2,25 @@
 
 Worked using python2.7/ python3
 
+#
+
 #Installation
-pip install Image 
 
-#Run
-python CompressMe.py -h    #Will give you help
+`pip install Image`
 
-python CompressMe.py -f path-to-your-folder -sa 1000     #Will give the count of all the images whose size is greater than 1000KB
+#
 
-python CompressMe.py -f path-to-your-folder -sa 1000 -c   #This is apply the compress on the images of size > 1000KB. The quality -q is default to 65% 
+#Run 
+
+#Will give you help
+
+`python CompressMe.py -h`
+
+#Will give the count of all the images whose size is greater than 1000KB
+
+`python CompressMe.py -f path-to-your-folder -sa 1000`     
+
+#This is apply the compress on the images of size > 1000KB. The quality -q is default to 65% 
+
+`python CompressMe.py -f path-to-your-folder -sa 1000 -c`   
 
