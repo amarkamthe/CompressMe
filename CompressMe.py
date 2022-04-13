@@ -11,7 +11,10 @@ Input parameters
 	    
 """
 import os, sys, re
-import Image
+try:
+ import Image
+except: 
+ from PIL import Image
 import argparse
 
 
@@ -66,7 +69,7 @@ def getFiles(root_path, above_size, below_size, quality, compress_flag):
 					fp_error.write(str_error)
 	fp_success.close()
 	fp_error.close()
-	print "Total number of files greater that "+str(above_size)+"KB - " + str(count)
+	print("Total number of files greater that "+str(above_size)+"KB - " + str(count))
 
 if __name__ == "__main__":
 	#Argument parser
